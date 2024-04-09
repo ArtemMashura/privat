@@ -1,0 +1,20 @@
+.currencyRate {
+    display: grid;
+    padding: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+}
+
+.compareCurrency {
+    margin-left: 5px;
+    color: rgba(0, 0, 0, .2);
+}
+
+.purchase {
+    text-align: right;
+}
+
+.sale {
+    text-align: right;
+}

@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.currencyHeader{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px 16px 0 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.privatMenu{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: minmax(max-content, max-content) minmax(max-content, max-content);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.converter {
   display: flex;
   flex-direction: column;
+  grid-gap: 16px;
+  padding-left: 32px;
+  padding-top: 16px;
+}
+
+.converterMenu {
+  display: flex;
+  grid-gap: 12px;
+}
+
+.converterMenuRight{
+  display: flex;
+  max-width: 300px;
+  grid-gap: 12px;
+}
+
+.sellCurrency {
+  display: block;
+  max-width: 197px;
+  width: 100%;
+}
+
+.result {
+  background: rgba(0, 0, 0, 0.04);
+  height: 54px;
+  margin-top: 36px;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  padding: 8px 16px;
+}
+
+.ammount {
+  margin-top: 36px;
+  height: 54px;
+  padding: 8px 16px;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+}
+
+.converterRight{
+  max-width: 300px;
+}
+
+.currencySelect{
+  text-align: center;
+  height: 54px;
+  padding: 6px 34px 6px 16px;
+  font-size: 14px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+.customRate{
+  max-width: 100px;
+  height: 54px;
+  border: 1px solid #c4c4c4;
+  margin-left: 16px;
+  padding: 8px 16px;
+}
+
+.separator{
+  border:         none;
+  border-left:    2px solid hsla(200, 10%, 50%,100);
+  height:         90%;
+  width:          1px;
+  margin-left: 50px;
+}
+
+.switchCurrencies {
+  max-height: 54px;
+  max-width: 40px;
+  display: flex;
   align-items: center;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
 }
